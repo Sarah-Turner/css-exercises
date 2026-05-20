@@ -32,6 +32,7 @@ body {
 }
 
 .sidebar {
+  /* default flex basis is auto so we consider the width */
   width: 300px;
   flex-shrink: 0;
   background: royalblue;
@@ -40,6 +41,7 @@ body {
 }
 
 .card-container {
+  /* no flex grow because the minimum size of the content fills the space */
   display: flex;
   gap: 24px;
   padding: 48px;
