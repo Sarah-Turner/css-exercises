@@ -26,7 +26,7 @@
   /* 1 row 2 col separates logo and header links */
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center; /* center header links vertically (they are not centered normally) */
 }
 
@@ -106,10 +106,8 @@
   background-color: #bccbde;
   grid-area: 3 / 2 / 4 / 3;
   display: grid;
-  grid-template-rows: 200px; /* rows will grow implicitly (default) */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* We need cards to fill all available space as the max, they grow and shrink dynamically and do not shrink past 250px */
   gap: 15px;
-  grid-auto-rows: 200px; /* 200px height for cards */
 }
 
 .article p {
@@ -123,6 +121,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  height: 200px;
 }
 
 .card p {
